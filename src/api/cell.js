@@ -37,6 +37,9 @@ export class Cell {
     }
 
     addEvent(cell) {
+        cell.addEventListener('click', (event) => {
+
+        })
 
         cell.addEventListener('mousemove', (event) => {
             if (event.buttons === 1) {
