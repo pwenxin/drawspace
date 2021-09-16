@@ -1,3 +1,5 @@
+import {Decorator} from "./decorator.js";
+
 export class Cell {
 
     fill = '#fff';
@@ -31,6 +33,7 @@ export class Cell {
         cell.setAttribute('rx', this.border_r);
         this.group.appendChild(cell);
 
+        new Decorator(cell);
         //添加事件
         this.addEvent(cell)
         this.object = cell
